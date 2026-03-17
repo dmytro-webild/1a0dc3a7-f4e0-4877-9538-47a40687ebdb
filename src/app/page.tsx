@@ -12,6 +12,9 @@ import FooterMedia from '@/components/sections/footer/FooterMedia';
 import { Award, Car, CheckCircle, Phone, Sparkles, Zap } from 'lucide-react';
 
 export default function LandingPage() {
+  const phoneNumber = "0782205551";
+  const phoneHref = `tel:${phoneNumber}`;
+
   return (
     <ThemeProvider
       defaultButtonVariant="elastic-effect"
@@ -34,7 +37,7 @@ export default function LandingPage() {
             { name: "Avis clients", id: "reviews" },
             { name: "Contact", id: "contact" }
           ]}
-          button={{ text: "📞 Appeler maintenant", href: "tel:0782205551" }}
+          button={{ text: "📞 Appeler maintenant", href: phoneHref }}
         />
       </div>
 
@@ -46,7 +49,7 @@ export default function LandingPage() {
           tagIcon={Sparkles}
           tagAnimation="slide-up"
           buttons={[
-            { text: "📞 Appeler maintenant", href: "tel:0782205551" },
+            { text: "📞 Appeler maintenant", href: phoneHref },
             { text: "🚗 Voir les véhicules", href: "#vehicles" }
           ]}
           buttonAnimation="slide-up"
@@ -142,7 +145,7 @@ export default function LandingPage() {
           tagIcon={Zap}
           tagAnimation="slide-up"
           buttons={[
-            { text: "📞 Commencer maintenant", href: "tel:0782205551" }
+            { text: "📞 Commencer maintenant", href: phoneHref }
           ]}
           buttonAnimation="slide-up"
           metrics={[
@@ -162,7 +165,7 @@ export default function LandingPage() {
         <ContactFaq
           ctaTitle="Un véhicule vous intéresse?"
           ctaDescription="Contactez-nous maintenant pour une visite gratuite, un test drive ou pour demander des informations spécifiques."
-          ctaButton={{ text: "📞 Appeler: 07 82 20 55 51", href: "tel:0782205551" }}
+          ctaButton={{ text: `📞 Appeler: ${phoneNumber}`, href: phoneHref }}
           ctaIcon={Phone}
           animationType="slide-up"
           useInvertedBackground={true}
@@ -186,7 +189,7 @@ export default function LandingPage() {
           columns={[
             {
               title: "Contact",              items: [
-                { label: "📞 Téléphone: 07 82 20 55 51", href: "tel:0782205551" },
+                { label: `📞 Téléphone: ${phoneNumber}`, href: phoneHref },
                 { label: "📍 Adresse: 37 Ter Rue de la Picardie, 77580 Villiers-sur-Morin", href: "#" },
                 { label: "🌐 Seine-et-Marne", href: "#" }
               ]
