@@ -30,7 +30,7 @@ export default function LandingPage() {
           brandName="Zénith Auto"
           navItems={[
             { name: "Véhicules", id: "vehicles" },
-            { name: "Pourquoi nous", id: "why-us" },
+            { name: "Pourquoi nous ?", id: "why-us" },
             { name: "Avis clients", id: "reviews" },
             { name: "Contact", id: "contact" }
           ]}
