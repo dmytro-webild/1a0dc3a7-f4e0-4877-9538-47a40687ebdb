@@ -15,6 +15,10 @@ export default function LandingPage() {
   const phoneNumber = "0782205551";
   const phoneHref = `tel:${phoneNumber}`;
 
+  const handleAppelerClick = () => {
+    window.location.href = phoneHref;
+  };
+
   return (
     <ThemeProvider
       defaultButtonVariant="elastic-effect"
@@ -37,7 +41,7 @@ export default function LandingPage() {
             { name: "Avis clients", id: "reviews" },
             { name: "Contact", id: "contact" }
           ]}
-          button={{ text: "📞 Appeler maintenant", href: phoneHref }}
+          button={{ text: "📞 Appeler maintenant", onClick: handleAppelerClick }}
         />
       </div>
 
@@ -49,7 +53,7 @@ export default function LandingPage() {
           tagIcon={Sparkles}
           tagAnimation="slide-up"
           buttons={[
-            { text: "📞 Appeler maintenant", href: phoneHref },
+            { text: "📞 Appeler maintenant", onClick: handleAppelerClick },
             { text: "🚗 Voir les véhicules", href: "#vehicles" }
           ]}
           buttonAnimation="slide-up"
@@ -145,7 +149,7 @@ export default function LandingPage() {
           tagIcon={Zap}
           tagAnimation="slide-up"
           buttons={[
-            { text: "📞 Commencer maintenant", href: phoneHref }
+            { text: "📞 Commencer maintenant", onClick: handleAppelerClick }
           ]}
           buttonAnimation="slide-up"
           metrics={[
@@ -165,7 +169,7 @@ export default function LandingPage() {
         <ContactFaq
           ctaTitle="Un véhicule vous intéresse?"
           ctaDescription="Contactez-nous maintenant pour une visite gratuite, un test drive ou pour demander des informations spécifiques."
-          ctaButton={{ text: `📞 Appeler: ${phoneNumber}`, href: phoneHref }}
+          ctaButton={{ text: `📞 Appeler: ${phoneNumber}`, onClick: handleAppelerClick }}
           ctaIcon={Phone}
           animationType="slide-up"
           useInvertedBackground={true}
