@@ -51,10 +51,10 @@ export default function LandingPage() {
           ]}
           buttonAnimation="slide-up"
           mediaItems={[
-            { imageSrc: "http://img.b2bpic.net/free-photo/woman-making-desicion-buy-car_1303-13873.jpg?_wi=1", imageAlt: "Showroom Zénith Auto moderne et accueillant" }
+            { imageSrc: "http://img.b2bpic.net/free-photo/woman-making-desicion-buy-car_1303-13873.jpg", imageAlt: "Showroom Zénith Auto moderne et accueillant" }
           ]}
           mediaAnimation="opacity"
-          background="animated-grid"
+          background={{ variant: "animated-grid" }}
           ariaLabel="Zénith Auto hero section - Voitures fiables Seine-et-Marne"
         />
       </div>
@@ -125,7 +125,7 @@ export default function LandingPage() {
             { id: "3", title: "✔ Accompagnement avant et après achat", content: "Notre équipe vous conseille avant l'achat et reste disponible après. Service client réactif et professionnel." },
             { id: "4", title: "✔ Processus simple et transparent", content: "De la visite à la livraison, chaque étape est claire et sans surprise. Vous êtes impliqué dans chaque décision." }
           ]}
-          imageSrc="http://img.b2bpic.net/free-photo/woman-making-desicion-buy-car_1303-13873.jpg?_wi=2"
+          imageSrc="http://img.b2bpic.net/free-photo/woman-making-desicion-buy-car_1303-13873.jpg"
           imageAlt="Zénith Auto - Équipe professionnelle et accueillante"
           mediaAnimation="opacity"
           useInvertedBackground={true}
@@ -151,7 +151,7 @@ export default function LandingPage() {
             { id: "step-3", title: "Repartez avec votre voiture", subtitle: "Processus simple et documentation complète", category: "Étape 3", value: "Rapide" }
           ]}
           animationType="slide-up"
-          textboxLayout="centered"
+          textboxLayout="default"
           useInvertedBackground={false}
           carouselMode="buttons"
           ariaLabel="Processus d'achat Zénith Auto - 3 étapes"
@@ -181,7 +181,7 @@ export default function LandingPage() {
       <div id="footer" data-section="footer">
         <FooterMedia
           logoText="Zénith Auto"
-          imageSrc="http://img.b2bpic.net/free-photo/woman-making-desicion-buy-car_1303-13873.jpg?_wi=3"
+          imageSrc="http://img.b2bpic.net/free-photo/woman-making-desicion-buy-car_1303-13873.jpg"
           imageAlt="Zénith Auto - Concessionnaire automobile professionnel"
           columns={[
             {
