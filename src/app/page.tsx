@@ -51,7 +51,7 @@ export default function LandingPage() {
           ]}
           buttonAnimation="slide-up"
           mediaItems={[
-            { imageSrc: "http://img.b2bpic.net/free-photo/woman-making-desicion-buy-car_1303-13873.jpg", imageAlt: "Showroom Zénith Auto moderne et accueillant" }
+            { imageSrc: "http://img.b2bpic.net/free-photo/woman-making-desicion-buy-car_1303-13873.jpg?_wi=1", imageAlt: "Showroom Zénith Auto moderne et accueillant" }
           ]}
           mediaAnimation="opacity"
           background="animated-grid"
@@ -125,7 +125,7 @@ export default function LandingPage() {
             { id: "3", title: "✔ Accompagnement avant et après achat", content: "Notre équipe vous conseille avant l'achat et reste disponible après. Service client réactif et professionnel." },
             { id: "4", title: "✔ Processus simple et transparent", content: "De la visite à la livraison, chaque étape est claire et sans surprise. Vous êtes impliqué dans chaque décision." }
           ]}
-          imageSrc="http://img.b2bpic.net/free-photo/woman-making-desicion-buy-car_1303-13873.jpg"
+          imageSrc="http://img.b2bpic.net/free-photo/woman-making-desicion-buy-car_1303-13873.jpg?_wi=2"
           imageAlt="Zénith Auto - Équipe professionnelle et accueillante"
           mediaAnimation="opacity"
           useInvertedBackground={true}
@@ -181,7 +181,7 @@ export default function LandingPage() {
       <div id="footer" data-section="footer">
         <FooterMedia
           logoText="Zénith Auto"
-          imageSrc="http://img.b2bpic.net/free-photo/woman-making-desicion-buy-car_1303-13873.jpg"
+          imageSrc="http://img.b2bpic.net/free-photo/woman-making-desicion-buy-car_1303-13873.jpg?_wi=3"
           imageAlt="Zénith Auto - Concessionnaire automobile professionnel"
           columns={[
             {
