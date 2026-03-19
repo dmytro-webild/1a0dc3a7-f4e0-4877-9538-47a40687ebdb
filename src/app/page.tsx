@@ -53,7 +53,7 @@ export default function LandingPage() {
           tagIcon={Sparkles}
           tagAnimation="slide-up"
           buttons={[
-            { text: "📞 Appeler maintenant", onClick: handleAppelerClick },
+            { text: "Réserver une visite gratuite", onClick: handleAppelerClick },
             { text: "🚗 Voir les véhicules", href: "#vehicles" }
           ]}
           buttonAnimation="slide-up"
